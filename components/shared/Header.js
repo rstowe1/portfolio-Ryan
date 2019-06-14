@@ -1,48 +1,3 @@
-// import React from 'react';
-// import Link from "next/link";
-//
-// class Header extends React.Component {
-//   render() {
-//     return (
-//       <React.Fragment>
-//
-{/*<Link href='/'>*/}
-{/*  <a>Home</a>*/}
-{/*</Link>*/}
-//
-//         <Link href='/about'>
-//           <a>About</a>
-//         </Link>
-//
-//         <Link href='/portfolios'>
-//           <a>Portfolios</a>
-//         </Link>
-//
-//         <Link href='/blog'>
-//           <a>Blog</a>
-//         </Link>
-//
-//         <Link href='/cv'>
-//           <a>Cv</a>
-//         </Link>
-//
-//         <style jsx>{`
-//               a {
-//              font-size: 20px;
-//              };
-//              .customClass {
-//              color: red;
-//              }
-//               `}</style>
-//       </React.Fragment>
-//     )
-//   }
-//
-// }
-//
-// export default Header;
-
-
 import React from 'react';
 import Link from "next/link";
 import {
@@ -54,17 +9,30 @@ import {
   NavItem,
   NavLink
 } from 'reactstrap';
+import auth0 from '../../services/auth0';
 
-const BsNavLink = (props) =>{
-  const {route, title} =props;
-  return(
-  <Link href={route}>
-    <a className="nav-link port-navbar-link">{title}</a>
-  </Link>
+const BsNavLink = (props) => {
+  const {route, title} = props;
+  return (
+    <Link href={route}>
+      <a className="nav-link port-navbar-link">{title}</a>
+    </Link>
   )
 };
 
-export default class Example extends React.Component {
+const Login = () => {
+  return (
+    <span onClick={auth0.login} className='nav-link port-navbar-link clickable'>LogIn</span>
+  )
+}
+
+const Logout = () => {
+  return (
+    <span onClick={auth0.logout} className='nav-link port-navbar-link clickable'>LogOut</span>
+  )
+}
+
+export default class Header extends React.Component {
   constructor(props) {
     super(props);
 
@@ -103,8 +71,16 @@ export default class Example extends React.Component {
               <NavItem className="port-navbar-item">
                 <BsNavLink route="/cv" title="CV"/>
               </NavItem>
-
-
+              {!auth0.isAuthenticated() &&
+              <NavItem className="port-navbar-item">
+                <Login/>
+              </NavItem>
+              }
+              {auth0.isAuthenticated() &&
+              <NavItem className="port-navbar-item">
+                <Logout/>
+              </NavItem>
+              }
             </Nav>
           </Collapse>
         </Navbar>

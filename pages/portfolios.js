@@ -35,7 +35,7 @@ class Portfolios extends React.Component {
   render() {
     const {posts} = this.props;
     return (
-      <BaseLayout>
+      <BaseLayout {...this.props.auth}>
         <BasePage>
           <h1>this is where my portfolios live</h1>
           <ul>
