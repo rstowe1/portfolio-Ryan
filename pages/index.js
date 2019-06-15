@@ -8,11 +8,11 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
 
-    this.roles = ['Accountant', 'Lease Accounting Expert', 'Developer', 'Process Improvement', 'Business Automation','Technology Connoisseur','Team Player']
+    this.roles = ['Accountant', 'Lease Accounting Expert', 'Developer', 'Process Improvement', 'Business Automation', 'Technology Connoisseur', 'Team Player']
   }
 
   render() {
-
+    const {isAuthenticated, user} = this.props.auth;
     return (
       <BaseLayout className="cover" {...this.props.auth}>
         <div className="main-section">
@@ -43,6 +43,7 @@ class Index extends React.Component {
               <Col md="6" className="hero-welcome-wrapper">
                 <div className="hero-welcome-text">
                   <h1>
+                    {isAuthenticated && <span><b>{user.name}</b> </span>}
                     Welcome to the portfolio website of Ryan W Stowe.
                     Get informed, collaborate and discover projects I have worked on through the years!
                   </h1>
