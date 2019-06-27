@@ -2,24 +2,26 @@ import React from 'react';
 import BaseLayout from '../layouts/BaseLayout';
 import BasePage from '../BasePage';
 
-const nameSpace = 'http://localhost:3000';
+const nameSpace = 'http://localhost:3000/';
 
-export default function(Component, role){
-  return class withAuth extends React.Component{
+export default role => Component =>
+  class withAuth extends React.Component {
 
     static async getInitialProps(args) {
       const pageProps = await Component.getInitialProps && await Component.getInitialProps(args);
 
-      return {...pageProps };
+      return {...pageProps};
     }
 
     renderProtectedPage() {
       const {isAuthenticated, user} = this.props.auth;
-      const userRole = user && user[`${nameSpace}/role`];
+      const userRole = user && user[`${nameSpace}role`];
       let isAuthorized = false;
 
-      if (role){
-        if (userRole && userRole === role){isAuthorized = true};
+      if (role) {
+        if (userRole && userRole === role) {
+          isAuthorized = true
+        }
       } else {
         isAuthorized = true;
       }
@@ -32,7 +34,7 @@ export default function(Component, role){
             </BasePage>
           </BaseLayout>
         )
-      } else if (!isAuthorized){
+      } else if (!isAuthorized) {
         return (
           <BaseLayout{...this.props.auth}>
             <BasePage>
@@ -40,14 +42,13 @@ export default function(Component, role){
             </BasePage>
           </BaseLayout>
         )
-      }  else {
+      } else {
         return <Component {...this.props} />
       }
     }
 
-    render(){
+    render() {
       return this.renderProtectedPage();
 
     }
   }
-}
