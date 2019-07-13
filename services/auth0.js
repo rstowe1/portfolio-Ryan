@@ -10,7 +10,7 @@ class Auth0 {
 
   constructor() {
     this.auth0 = new auth0.WebAuth({
-      domain: 'portfolios-stowe.auth0.com',
+      domain: 'portfolio-stowe.auth0.com',
       clientID: 'It9itOzefx06xsg2RdrcIIEPCKf64Sot',
       redirectUri: 'http://localhost:3000/callback',
       responseType: 'token id_token',
@@ -112,7 +112,7 @@ class Auth0 {
   async serverAuth(req) {
     if (req.headers.cookie) {
 
-      const token = getCookieFromReq(req, 'jwt')
+      const token = getCookieFromReq(req, 'jwt');
       const verifiedToken = await this.verifyToken(token);
 
       return verifiedToken;

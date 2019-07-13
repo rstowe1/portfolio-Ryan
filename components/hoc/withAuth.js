@@ -37,7 +37,7 @@ export default role => Component =>
       } else if (!isAuthorized) {
         return (
           <BaseLayout{...this.props.auth}>
-            <BasePage className='base-page'>
+            <BasePage>
               <h1> You are not authorized to view this content...Whoops!</h1>
             </BasePage>
           </BaseLayout>
