@@ -2,43 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/form/PortDate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/form/PortInput.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/build-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/react-loadable-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/pages-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/ssr-module-cache.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/static/development/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/static/development/pages/_app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/static/development/pages/_document.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/static/development/pages/_document.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/static/development/pages/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/server/static/development/pages/_error.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/chunks/0.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/chunks/0.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/development/dll/dll_4a3e2a490dc45cedad26.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/development/pages/_app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/development/pages/_app.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/development/pages/_error.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/development/pages/_error.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/runtime/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/runtime/main.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/runtime/webpack.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/.next/static/runtime/webpack.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/config/prod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/book.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/hoc/withAuth.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/hoc/withAuth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/portfolios/PortfolioCreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/portfolios/PortfolioCreateForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/portfolioNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolioNew.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth0.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-403">
-              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+            <state relative-caret-position="168">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -327,12 +292,12 @@
       <workItem from="1562105588885" duration="7280000" />
       <workItem from="1562710288761" duration="3287000" />
       <workItem from="1562947379596" duration="1000" />
-      <workItem from="1563024459472" duration="18313000" />
+      <workItem from="1563024459472" duration="21494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149825000" />
+    <option name="totallyTimeSpent" value="153006000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1292" height="692" extended-state="6" />
@@ -344,7 +309,7 @@
       <window_info id="Structure" order="3" sideWeight="0.50088185" weight="0.24861" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32902032" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32902032" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32902032" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -761,8 +726,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-403">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        <state relative-caret-position="168">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>

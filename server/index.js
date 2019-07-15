@@ -1,6 +1,7 @@
 const express = require('express');
 const next = require('next');
 const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const routes = require('../routes');
 
 // Services
@@ -31,8 +32,9 @@ mongoose.connect(config.DB_URI, {useNewUrlParser: true})
 app.prepare()
 	.then(() => {
 		const server = express();
+		server.use(bodyParser.json());
 
-		server.post('api/v1/books', (req, res) => {
+		server.post('/api/v1/books', (req, res) => {
 			const bookData = req.body;
 			const book = new Book(bookData);
 			book.save((err, createdBook) => {
@@ -42,6 +44,18 @@ app.prepare()
 				return res.json(createdBook);
 			});
 		});
+
+		server.get('/api/v1/books', (req, res) => {
+
+			Book.find({},(err, allBooks)=> {
+				if (err){
+					return res.status(422).send(err);
+				}
+				return res.json(allBooks);
+			})
+		});
+
+
 
 
 		server.get('/api/v1/secret', authService.checkJWT, (req, res) => {
@@ -57,6 +71,8 @@ app.prepare()
 		server.get('*', (req, res) => {
 			return handle(req, res)
 		});
+
+
 
 		server.use(function (err, req, res, next) {
 			if (err.name === 'UnauthorizedError') {
