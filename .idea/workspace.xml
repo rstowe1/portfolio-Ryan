@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/portfolios.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolios.js" afterDir="false" />
-    </list>
+    <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/portfolios.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="749">
+              <caret line="57" lean-forward="true" selection-start-line="7" selection-end-line="57" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -228,16 +225,15 @@
       <workItem from="1567626449655" duration="601000" />
       <workItem from="1569078824287" duration="9290000" />
       <workItem from="1569089695599" duration="416000" />
-      <workItem from="1569112448819" duration="4856000" />
+      <workItem from="1569112448819" duration="5902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14562000" />
+    <option name="totallyTimeSpent" value="15608000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1744" y="0" width="1703" height="1447" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24984986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -414,8 +410,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/portfolios.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="749">
+          <caret line="57" lean-forward="true" selection-start-line="7" selection-end-line="57" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
