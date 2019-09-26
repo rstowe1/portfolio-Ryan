@@ -7,21 +7,22 @@ import {getPortfolios} from '../actions';
 
 class Portfolios extends React.Component {
 
-  static async getInitialProps({req}) {
+  static async getInitialProps() {
     let portfolios = [];
     try {
-      portfolios = await getPortfolios(req);
-    } catch (err) {
-      console.error(err)
+      portfolios = await getPortfolios();
+    } catch(err) {
+      console.error(err);
     }
+
     return {portfolios};
   }
 
   renderPortfolios(portfolios) {
     return portfolios.map((portfolio, index) => {
       return (
-        <Col md="4">
-          <React.Fragment key={index}>
+        <Col md="4"  key={index}>
+          <React.Fragment>
             <span>
               <Card className="portfolio-card">
                 <CardHeader className="portfolio-card-header"> {portfolio.position} </CardHeader>
