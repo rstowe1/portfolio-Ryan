@@ -10,25 +10,31 @@ import {createPortfolio} from "../actions";
 class PortfolioNew extends React.Component {
   constructor(props) {
     super();
+    this.state = {
+      error: undefined
+    };
     this.savePortfolio = this.savePortfolio.bind(this);
   }
 
   savePortfolio(portfolioData) {
     createPortfolio(portfolioData)
       .then((portfolio) => {
-        console.log(portfolio);
+        this.setState({error: undefined});
       }).catch((err) => {
+      this.setState({error: err.message});
       console.error(err)
     })
   }
 
   render() {
+    const {error} = this.state;
+
     return (
       <BaseLayout {...this.props.auth}>
         <BasePage className="portfolio-create-page" title='Create a new portfolio'>
           <Row>
             <Col md="6">
-              <PortfolioCreateForm onSubmit={this.savePortfolio}/>
+              <PortfolioCreateForm error={error} onSubmit={this.savePortfolio}/>
             </Col>
           </Row>
         </BasePage>

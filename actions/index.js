@@ -2,6 +2,7 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 import {getCookieFromReq} from "../helpers/utils";
+import error from "auth0-js/src/helper/error";
 
 const axiosInstance = axios.create({
   baseURL: 'http://localhost:3000/api/v1',
@@ -14,6 +15,17 @@ const setAuthHeader = (req) => {
   if (token) {
     return {headers: {'Authorization': `Bearer ${token}`}}
   }
+    return undefined;
+};
+const rejectPromise = (resError) => {
+  let error = {};
+
+  if (err && err.response && err.response.data) {
+    error = err.response.data;
+  } else {
+    error = resError;
+  }
+  return Promise.reject(error);
 };
 
 export const getSecretData = async (req) => {
@@ -26,5 +38,7 @@ export const getPortfolios = async () => {
 };
 
 export const createPortfolio = async (portfolioData) => {
-  return axiosInstance.post('/portfolios', portfolioData, setAuthHeader()).then(response => response.data)
+  return axiosInstance.post('/portfolios', portfolioData, setAuthHeader())
+    .then(response => response.data)
+    .catch(error => rejectPromise(error))
 };
