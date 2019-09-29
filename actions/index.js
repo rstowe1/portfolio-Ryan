@@ -2,12 +2,11 @@ import axios from 'axios';
 import Cookies from 'js-cookie';
 
 import {getCookieFromReq} from "../helpers/utils";
-import error from "auth0-js/src/helper/error";
 
 const axiosInstance = axios.create({
   baseURL: 'http://localhost:3000/api/v1',
   timeout: 3000
-})
+});
 
 const setAuthHeader = (req) => {
   const token = req ? getCookieFromReq(req, 'jwt') : Cookies.getJSON('jwt');
@@ -15,13 +14,14 @@ const setAuthHeader = (req) => {
   if (token) {
     return {headers: {'Authorization': `Bearer ${token}`}}
   }
-    return undefined;
+  return undefined;
 };
+
 const rejectPromise = (resError) => {
   let error = {};
 
-  if (err && err.response && err.response.data) {
-    error = err.response.data;
+  if (resError && resError.response && resError.response.data) {
+    error = resError.response.data;
   } else {
     error = resError;
   }
@@ -37,8 +37,18 @@ export const getPortfolios = async () => {
   return await axiosInstance.get('/portfolios').then(response => response.data);
 };
 
+export const getPortfolioById = async (id) => {
+  return await axiosInstance.get(`/portfolios/${id}`).then(response => response.data);
+};
+
 export const createPortfolio = async (portfolioData) => {
   return axiosInstance.post('/portfolios', portfolioData, setAuthHeader())
+    .then(response => response.data)
+    .catch(error => rejectPromise(error))
+};
+
+export const updatePortfolio = async (portfolioData) => {
+  return await axiosInstance.patch(`/portfolios/${portfolioData._id}`, portfolioData, setAuthHeader())
     .then(response => response.data)
     .catch(error => rejectPromise(error))
 };

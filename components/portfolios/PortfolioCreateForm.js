@@ -10,7 +10,7 @@ const validateInputs = (values) => {
 
   Object.entries(values).forEach(([key, value]) => {
     console.log(key);
-    if (!values[key] && (values[key] === 'startDate' || values[key] === 'endDate')) {
+    if (!values[key] && key !== 'endDate') {
       errors[key] = `Field ${key} is required`
     }
   });
@@ -25,24 +25,16 @@ const validateInputs = (values) => {
 
   return errors;
 };
-const INITIAL_VALUES = {
-  title: '',
-  company: '',
-  location: '',
-  position: '',
-  description: '',
-  startDate: '',
-  endDate: ''
-};
 
-const PortfolioCreateForm = (props) => (
+
+const PortfolioCreateForm = ({initialValue, onSubmit, error}) => (
   <div>
 
 
     <Formik
-      initialValues={INITIAL_VALUES}
+      initialValues={initialValue}
       validate={validateInputs}
-      onSubmit={props.onSubmit}
+      onSubmit={onSubmit}
     >
       {({isSubmitting}) => (
         <Form>
@@ -73,15 +65,17 @@ const PortfolioCreateForm = (props) => (
 
           <Field name="startDate"
                  label="Start Date"
+                 initialDate={initialValue.startDate}
                  component={PortDate}/>
           <Field name="endDate"
                  label="End Date"
                  canBeDisabled={true}
+                 initialDate={initialValue.endDate}
                  component={PortDate}/>
           {
-            props.error &&
+            error &&
             <Alert color="danger">
-              {props.error}
+              {error}
             </Alert>
           }
 

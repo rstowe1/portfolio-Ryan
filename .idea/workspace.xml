@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pages/portfolioEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/form/PortDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/form/PortDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/portfolios/PortfolioCreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/portfolios/PortfolioCreateForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/portfolioNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolioNew.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,25 +18,6 @@
   </component>
   <component name="FavoritesManager">
     <favorites_list name="portfolio_Stowe" />
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>debugger</find>
-      <find>detail</find>
-      <find>splice</find>
-      <find>examp</find>
-      <find>secretDat</find>
-      <find>cookies.get</find>
-      <find>token</find>
-      <find>secretData</find>
-      <find>userRole</find>
-      <find>role</find>
-      <find>amespace</find>
-      <find>namespace</find>
-      <find>portfolio-stowe</find>
-      <find>portfoli</find>
-      <find>authService</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -151,7 +135,7 @@
       <workItem from="1569112448819" duration="10482000" />
       <workItem from="1569537325701" duration="2449000" />
       <workItem from="1569539896567" duration="29000" />
-      <workItem from="1569539963475" duration="2254000" />
+      <workItem from="1569539963475" duration="11045000" />
     </task>
     <servers />
   </component>
