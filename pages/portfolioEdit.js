@@ -59,7 +59,7 @@ class PortfolioEdit extends React.Component {
         <BasePage className="portfolio-create-page" title="Update Portfolio">
           <Row>
             <Col md="6">
-              <PortfolioCreateForm initialValues={portfolio}
+              <PortfolioCreateForm initialValue={portfolio}
                                    error={error}
                                    onSubmit={this.updatePortfolio}/>
             </Col>

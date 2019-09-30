@@ -5,6 +5,7 @@ import auth0 from '../services/auth0'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/main.scss'
 
+const namespace = 'http://localhost:3000';
 
 class MyApp extends App {
   static async getInitialProps({Component, router, ctx}) {
@@ -15,7 +16,9 @@ class MyApp extends App {
       pageProps = await Component.getInitialProps(ctx)
     }
 
-    const auth = {user, isAuthenticated: !!user};
+    const isSiteOwner = user[namespace + '/roles'] ==='siteOwner';
+
+    const auth = {user, isAuthenticated: !!user, isSiteOwner};
 
     return {pageProps, auth}
   }

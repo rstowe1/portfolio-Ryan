@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pages/portfolioEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/form/PortDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/form/PortDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/portfolios/PortfolioCreateForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/portfolios/PortfolioCreateForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portfolioEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolioEdit.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/portfolioNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolioNew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/portfolios.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_portfolios.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_portfolios.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +46,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -135,7 +135,8 @@
       <workItem from="1569112448819" duration="10482000" />
       <workItem from="1569537325701" duration="2449000" />
       <workItem from="1569539896567" duration="29000" />
-      <workItem from="1569539963475" duration="11045000" />
+      <workItem from="1569539963475" duration="17368000" />
+      <workItem from="1569881351640" duration="2103000" />
     </task>
     <servers />
   </component>
