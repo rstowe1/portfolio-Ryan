@@ -32,7 +32,7 @@ class Index extends React.Component {
                           Have a look at my portfolio and job history.
                         </div>
                       </div>
-                      <img className="image" src="/static/images/section-1.png"/>
+                      <img className="image" src="/static/images/ME.jpg"/>
                       <div className="shadow-custom">
                         <div className="shadow-inner"></div>
                       </div>

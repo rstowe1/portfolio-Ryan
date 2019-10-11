@@ -1,30 +1,29 @@
 import React from "react";
 import DatePicker from "react-datepicker";
-import moment from 'moment';
-import {Button, FormGroup, Label} from 'reactstrap';
+import moment from "moment";
+import { FormGroup, Label, Button } from 'reactstrap';
 
 import "react-datepicker/dist/react-datepicker.css";
 
-// CSS Modules, react-datepicker-cssmodules.css
-import 'react-datepicker/dist/react-datepicker-cssmodules.css';
-
-
 export default class PortDate extends React.Component {
+
 	constructor(props) {
 		super(props);
 
 		const dateValue = props.initialDate ? moment(props.initialDate) : moment();
+		const isHidden = props.initialDate ? false : true;
 
 		this.state = {
 			dateValue,
-			isHidden: false
+			isHidden
 		};
+
 		this.handleChange = this.handleChange.bind(this);
 	}
 
 	setFieldValueAndTouched(date, touched) {
-		const {setFieldValue, setFieldTouched} = this.props.form;
-		const {name} = this.props.field;
+		const { setFieldValue, setFieldTouched } = this.props.form;
+		const { name } = this.props.field;
 
 		setFieldValue(name, date, true);
 		setFieldTouched(name, touched, true);
@@ -34,24 +33,28 @@ export default class PortDate extends React.Component {
 		this.setState({
 			dateValue: date
 		});
+
 		this.setFieldValueAndTouched(date, true);
 	}
 
 	toggleDate(date) {
-	this.setState({
+
+		this.setState({
 			isHidden: !this.state.isHidden
 		});
-		this.setFieldValueAndTouched(date,true);
+
+		this.setFieldValueAndTouched(date, true);
 	}
 
 	render() {
-		const {canBeDisabled, label, field, form: {touched, errors}} = this.props;
-		const {isHidden, dateValue} = this.state;
+		const { canBeDisabled, label, field, form: { touched, errors} } = this.props;
+		const { isHidden, dateValue } = this.state;
+
 		return (
 			<FormGroup>
 				<Label>{label}</Label>
-				<div className='input-group'>
-					{!isHidden &&
+				<div className="input-group">
+					{ !isHidden &&
 					<DatePicker
 						selected={dateValue}
 						onChange={this.handleChange}
@@ -59,22 +62,37 @@ export default class PortDate extends React.Component {
 						showMonthDropdown
 						showYearDropdown
 						maxDate={moment()}
-						dropdownMode='select'
+						dropdownMode="select"
 					/>
 					}
 				</div>
+				{ canBeDisabled && !isHidden && <Button onClick={() => this.toggleDate(null)}>Still Working Here...</Button>}
 
-				{canBeDisabled && !isHidden && <Button onClick={() => this.toggleDate(null)}> Still Working </Button>}
-
-				{canBeDisabled && isHidden &&
+				{ canBeDisabled && isHidden &&
 				<React.Fragment>
-					<span>Still Working Here</span>
-					<Button onClick={() => this.toggleDate(dateValue)}>Set End Date</Button>
-				</React.Fragment>}
+					<span> Still Working Here </span>
+					<Button onClick={() => this.toggleDate(dateValue)}> Set End Date </Button>
+				</React.Fragment>
+				}
 
-				{touched[field.name] &&
+
+
+				{ touched[field.name] &&
 				errors[field.name] && <div className="error">{errors[field.name]}</div>}
 			</FormGroup>
 		);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

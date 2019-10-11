@@ -46,7 +46,7 @@ class PortfolioEdit extends React.Component {
       .catch((err) => {
         const error = err.message || 'Server Error!';
         setSubmitting(false);
-        this.setState({err});
+        this.setState({error});
       })
   }
 
