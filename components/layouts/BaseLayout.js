@@ -8,11 +8,11 @@ const BaseLayout = (props) => {
 
   return (
     <React.Fragment>
-      <head>
+      <Head>
         <title>Ryan W. Stowe</title>
         <script src="https://kit.fontawesome.com/351a84dfa1.js" crossOrigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>
-      </head>
+      </Head>
       <div className="layout-container">
         {/*{headerType === 'index' && <Header className='port-nav-index' isAuthenticated={isAuthenticated} user={user}/>}*/}
         {/*{headerType === 'default' && <Header className='port-nav-default' isAuthenticated={isAuthenticated} user={user}/>}*/}

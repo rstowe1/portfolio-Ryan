@@ -1,6 +1,7 @@
 import React from 'react'
 
 import HoverMenu from "./HoverMenu";
+import ControllMenu from "./ControllMenu";
 
 import {Editor} from 'slate-react'
 import {initialValue} from "./initial-value";
@@ -53,6 +54,30 @@ export default class SlateEditor extends React.Component {
     rect.width / 2}px`
   }
 
+  getTitle() {
+    const {value} = this.state;
+    const firstBlock = value.document.getBlocks().get(0);
+    const secondBlock = value.document.getBlocks().get(1);
+
+    const title = firstBlock && firstBlock.text ? firstBlock.text : 'No Title';
+    const subtitle = secondBlock && secondBlock.text ? secondBlock.text : 'No Subtitle';
+
+    return {
+      title,
+      subtitle
+    }
+  }
+
+
+    save() {
+    debugger;
+    const {value} = this.state;
+    const {save, isLoading} = this.props;
+    const headingValues = this.getTitle();
+
+    save(headingValues);
+  }
+
 
   // Render the editor.
   render() {
@@ -61,7 +86,8 @@ export default class SlateEditor extends React.Component {
     return (
       <React.Fragment>
         {isLoaded &&
-        <Editor placeholder='Enter some text...'
+        <Editor {...this.props}
+                placeholder='Enter some text...'
                 value={this.state.value}
                 onChange={this.onChange}
                 renderMark={renderMark}
@@ -78,10 +104,10 @@ export default class SlateEditor extends React.Component {
 
     return (
       <React.Fragment>
-        {/*<ControllMenu isLoading={isLoading} save={() => this.save()}></ControllMenu>*/}
+        <ControllMenu isLoading={isLoading} save={() => this.save()}></ControllMenu>
         {children}
         <HoverMenu innerRef={menu => (this.menu = menu)} editor={editor}/>
-        <style jsx>
+        <style>
           {`
             @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
           `}

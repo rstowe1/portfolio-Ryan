@@ -2,27 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/portfolios/PortfolioCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/portfolios/PortfolioCardDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slate-editor/Editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slate-editor/HoverMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slate-editor/components/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slate-editor/initial-value.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/slate-editor/renderers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/blogEditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/home-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/_blogs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/slate-editor/ControllMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/_slate-editor.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BasePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BasePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/form/PortDate.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/form/PortDate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/layouts/BaseLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layouts/BaseLayout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/portfolioEdit.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolioEdit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/portfolioNew.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolioNew.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/portfolios.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/portfolios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/slate-editor/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/slate-editor/Editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/blogEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/blogEditor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
     </list>
@@ -66,8 +53,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ryan\Desktop\portfolio-Ryan\styles" />
       <recent name="C:\Users\Ryan\Desktop\portfolio-Ryan\static\images" />
+      <recent name="C:\Users\Ryan\Desktop\portfolio-Ryan\styles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -163,7 +150,7 @@
       <workItem from="1569967844347" duration="3192000" />
       <workItem from="1570057963477" duration="4842000" />
       <workItem from="1570486778420" duration="7406000" />
-      <workItem from="1570660161772" duration="4471000" />
+      <workItem from="1570660161772" duration="14190000" />
     </task>
     <servers />
   </component>
