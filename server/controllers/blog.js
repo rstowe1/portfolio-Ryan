@@ -10,7 +10,6 @@ exports.getBlogs = (req, res) => {
       if (err) {
         return res.status(422).send(err);
       }
-
       return res.json(publishedBlogs);
     });
 }
@@ -22,7 +21,6 @@ exports.getBlogBySlug = (req, res) => {
     if (err) {
       return res.status(422).send(err);
     }
-
     return res.json(foundBlog);
   });
 }
@@ -34,7 +32,6 @@ exports.getBlogById = (req, res) => {
     if (err) {
       return res.status(422).send(err);
     }
-
     return res.json(foundBlog);
   });
 }
@@ -46,7 +43,6 @@ exports.getUserBlogs = (req, res) => {
     if (err) {
       return res.status(422).send(err);
     }
-
     return res.json(userBlogs);
   });
 }

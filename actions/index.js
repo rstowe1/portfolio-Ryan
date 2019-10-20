@@ -60,14 +60,6 @@ export const deletePortfolio = (portfolioId) => {
 
 //BLOG ACTIONS
 
-export const saveBlog = (blogData) => {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve('promise resolved')
-    }, 1000)
-  })
-}
-
 export const getBlogs = async (req) => {
   return await axiosInstance.get('/blogs').then(response => response.data);
 }
