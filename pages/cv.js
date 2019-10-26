@@ -2,12 +2,29 @@ import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import BasePage from '../components/BasePage';
 
+import {Row, Col} from 'reactstrap';
+
 class Cv extends React.Component {
   render() {
     return (
       <BaseLayout {...this.props.auth}>
-        <BasePage>
-          <h1> This is my CV... you should take a look! </h1>
+        <BasePage className='cv-page'>
+          <Row>
+            <Col md={{size:8, offset:2}}>
+              <h1 className='title'>My Skills</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={{size: 8, offset: 2}}>
+              <div className='cv-title'>
+                <a download='Ryan_resume.pdf' className='btn btn-success'
+                   href='/static/Ryan%20W%20Stowe.pdf'>Download</a>
+              </div>
+              <iframe style={{width: '100%', height: '800px'}} src='/static/Ryan%20W%20Stowe.pdf'>
+
+              </iframe>
+            </Col>
+          </Row>
         </BasePage>
       </BaseLayout>
     )

@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/ActiveLink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/Ryan W Stowe.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/_about.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/_cv.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/shared/_mixins.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layouts/BaseLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layouts/BaseLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/about.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/cv.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/cv.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +58,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ryan\Desktop\portfolio-Ryan\static" />
       <recent name="C:\Users\Ryan\Desktop\portfolio-Ryan\static\images" />
       <recent name="C:\Users\Ryan\Desktop\portfolio-Ryan\styles" />
     </key>
@@ -144,6 +159,7 @@
       <workItem from="1570660161772" duration="35003000" />
       <workItem from="1571433294499" duration="984000" />
       <workItem from="1571434296892" duration="4948000" />
+      <workItem from="1572111520701" duration="10642000" />
     </task>
     <servers />
   </component>

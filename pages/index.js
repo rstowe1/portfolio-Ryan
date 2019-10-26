@@ -8,11 +8,33 @@ class Index extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      isFlipping: false
+    }
+
     this.roles = ['Accountant', 'Lease Accounting Expert', 'Developer', 'Process Improvement', 'Business Automation', 'Technology Connoisseur', 'Team Player']
+  }
+
+  componentDidMount() {
+    this.animateCard();
+  }
+
+  componentWillUnmount() {
+    this.cardsAnimationInterval && clearInterval(this.cardsAnimationInterval);
+  }
+
+  animateCard() {
+
+    this.cardsAnimationInterval = setInterval(() => {
+      this.setState({
+        isFlipping: !this.state.isFlipping
+      })
+    }, 10000);
   }
 
   render() {
     const {isAuthenticated, user} = this.props.auth;
+    const { isFlipping } = this.state;
     return (
       <BaseLayout className="cover" {...this.props.auth} headerType='index'>
         <div className="main-section">
@@ -24,8 +46,8 @@ class Index extends React.Component {
             <Row>
               <Col md="6">
                 <div className="hero-section">
-                  <div className={`flipper`}>
-                    <div className="back">
+                  <div className={`flipper ${isFlipping ? 'isFlipping' : ''}`}>
+                    <div className="front">
                       <div className="hero-section-content">
                         <h2> Full Stack Web Developer </h2>
                         <div className="hero-section-content-intro">
@@ -34,7 +56,19 @@ class Index extends React.Component {
                       </div>
                       <img className="image" src="/static/images/ME.jpg"/>
                       <div className="shadow-custom">
-                        <div className="shadow-inner"></div>
+                        <div className="shadow-inner"/>
+                      </div>
+                    </div>
+                    <div className="back">
+                      <div className="hero-section-content">
+                        <h2> Get your projects done </h2>
+                        <div className="hero-section-content-intro">
+                          Professional and top quality web development services.
+                        </div>
+                      </div>
+                      <img className="image" src="/static/images/ME.jpg"/>
+                      <div className="shadow-custom">
+                        <div className="shadow-inner"/>
                       </div>
                     </div>
                   </div>
