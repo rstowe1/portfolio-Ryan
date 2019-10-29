@@ -3,7 +3,7 @@ import Header from '../shared/Header';
 import Head from 'next/head';
 
 const BaseLayout = (props) => {
-  const {className, children, isAuthenticated, user, isSiteOwner, title} = props;
+  const {className, children, isAuthenticated, user, isSiteOwner, title, cannonical} = props;
   const headerType = props.headerType || 'default';
 
   return (
@@ -16,9 +16,12 @@ const BaseLayout = (props) => {
 
         <meta property='og:title' content='Ryan W. Stowe | Accountant, Developer, Technology Enthusiast'/>
         <meta property='og:locale' content='en_US'/>
-        <meta property='og:url' content='https://ryanw.tech'/>
+        <meta property='og:url' content={`${process.env.BASE_URL}`}/>
         <meta property='og:type' content='website'/>
         <meta property='og:description' content="My name is Ryan W. Stowe and I am an experienced software engineer and freelance developer. I have a Bachelors degree in Accounting, a Certification in Web Development and several years of experience working on a wide range of technologies and projects from General Ledger Accounting to web applications in React. Throughout my career, I have acquired advanced technical knowledge and the ability to use my unique skill set to create business software to make general tasks more simple as well as specializing in process improvement."/>
+
+        {cannonical && <Link rel='cannoncical' href={`${process.env.BASE_URL}${cannonical}`}/>}
+        <link rel='icon' type='image/ico' href='/static/favicon.ico'/>
 
         <script src="https://kit.fontawesome.com/351a84dfa1.js" crossOrigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"/>

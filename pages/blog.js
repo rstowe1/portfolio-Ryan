@@ -94,6 +94,14 @@ class Blogs extends React.Component {
                       </a>
                     </li>
                     <li className="list-inline-item">
+                      <a target="_blank" href="https://www.linkedin.com/in/ryanwstowe/">
+                        <span className="fa-stack fa-lg">
+                          <i className="fas fa-circle fa-stack-2x"/>
+                          <i className="fab fa-linkedin fa-stack-1x fa-inverse"/>
+                        </span>
+                      </a>
+                    </li>
+                    <li className="list-inline-item">
                       <a target="_blank" href="https://github.com/rstowe1">
                         <span className="fa-stack fa-lg">
                           <i className="fas fa-circle fa-stack-2x"/>

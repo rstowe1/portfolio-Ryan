@@ -34,7 +34,7 @@ class Index extends React.Component {
 
   render() {
     const {isAuthenticated, user} = this.props.auth;
-    const { isFlipping } = this.state;
+    const {isFlipping} = this.state;
     return (
       <BaseLayout
         className="cover" {...this.props.auth}
@@ -57,7 +57,7 @@ class Index extends React.Component {
                           Have a look at my portfolio and job history.
                         </div>
                       </div>
-                      <img className="image" src="/static/images/ME.jpg"/>
+                      <img alt='Ryan W. Stowe | Wedding Picture' className="image" src="/static/images/ME.jpg"/>
                       <div className="shadow-custom">
                         <div className="shadow-inner"/>
                       </div>
@@ -69,7 +69,7 @@ class Index extends React.Component {
                           Professional and top quality web development services.
                         </div>
                       </div>
-                      <img className="image" src="/static/images/ME.jpg"/>
+                      <img alt='Ryan W. Stowe | Wedding Picture' className="image" src="/static/images/ME.jpg"/>
                       <div className="shadow-custom">
                         <div className="shadow-inner"/>
                       </div>
@@ -100,9 +100,9 @@ class Index extends React.Component {
                 />
 
                 <div className="hero-welcome-bio">
-                  <h1>
+                  <h2>
                     Take a look around.
-                  </h1>
+                  </h2>
                 </div>
               </Col>
             </Row>
