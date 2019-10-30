@@ -3,8 +3,11 @@ import Cookies from 'js-cookie';
 
 import {getCookieFromReq} from "../helpers/utils";
 
+
+const prod = process.env.NODE_ENV === 'production';
+
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api/v1',
+  baseURL: prod ? 'https://portfolio-stowe.herokuapp.com/api/v1' : 'http://localhost:3000/api/v1',
   timeout: 3000
 });
 
