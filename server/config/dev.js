@@ -1,4 +1,4 @@
 module.exports = {
 	DB_URI: 'mongodb+srv://ryan:@Ma$ter21891@cluster0-3p7es.mongodb.net/test?retryWrites=true&w=majority',
-	NAMESPACE: 'http://localhost:3000'
+	NAMESPACE: 'https://portfolio-stowe.herokuapp.com'
 };

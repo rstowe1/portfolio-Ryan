@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="6fdd9006-8f51-4f14-883a-14b0ac683310" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/layouts/BaseLayout.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/layouts/BaseLayout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/services/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/services/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Montserrat-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/fonts/Montserrat-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/shared/_fonts.scss" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -150,7 +156,7 @@
       <workItem from="1571434296892" duration="4948000" />
       <workItem from="1572111520701" duration="28203000" />
       <workItem from="1573318983768" duration="29000" />
-      <workItem from="1573319054733" duration="7554000" />
+      <workItem from="1573319054733" duration="9156000" />
     </task>
     <servers />
   </component>

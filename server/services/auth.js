@@ -20,7 +20,7 @@ exports.checkJWT = jwt({
 
 exports.checkRole = role => (req, res, next) => {
   const user = req.user;
-  if (user && (user[NAMESPACE + '/role'] === role)) {
+  if (user && [NAMESPACE + '/role'] && (user[NAMESPACE + '/role'] === role)) {
     next();
   } else {
     return res.status(401).send({title: 'Not Authorized', detail: 'You do not have authorization to view this data'})
