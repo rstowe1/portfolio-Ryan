@@ -41,9 +41,9 @@ class Index extends React.Component {
         headerType='index'
         title='Ryan W. Stowe | Portfolio'>
         <div className="main-section">
-          <div className="background-image">
-            <img src="/static/images/background-index.png"/>
-          </div>
+          {/*<div className="background-image">*/}
+            {/*<img src="/static/images/background-index.png"/>*/}
+          {/*</div>*/}
 
           <Container>
             <Row>
