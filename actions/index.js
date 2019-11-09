@@ -14,7 +14,7 @@ const setAuthHeader = (req) => {
   if (token) {
     return {headers: {'Authorization': `Bearer ${token}`}}
   }
-  return {headers: {'Access-Control-Allow-Origin':'*'}};
+  return undefined;
 };
 
 const rejectPromise = (resError) => {
