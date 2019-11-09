@@ -5,7 +5,7 @@ import Head from 'next/head';
 const BaseLayout = (props) => {
   const {className, children, isAuthenticated, user, isSiteOwner, cannonical} = props;
     const headerType = props.headerType || 'default';
-    const title = props.title || 'Default Page';
+    const title = props.title || 'Ryan Stowe Portfolio';
   
 
 
