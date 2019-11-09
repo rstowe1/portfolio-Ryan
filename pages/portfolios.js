@@ -1,12 +1,13 @@
 import React from 'react';
 import BaseLayout from '../components/layouts/BaseLayout';
 import BasePage from '../components/BasePage';
-import {Link} from '../routes'
-import {Col, Row, Button} from 'reactstrap';
-import {getPortfolios, deletePortfolio} from '../actions';
+import { Link } from '../routes'
+import { Col, Row, Button } from 'reactstrap';
 import PortfolioCard from '../components/portfolios/PortfolioCard';
 
-import {Router} from '../routes';
+import { Router } from '../routes';
+
+import { getPortfolios, deletePortfolio } from '../actions';
 
 class Portfolios extends React.Component {
 
@@ -15,7 +16,7 @@ class Portfolios extends React.Component {
 
     try {
       portfolios = await getPortfolios();
-    } catch (err) {
+    } catch(err) {
       console.error(err);
     }
 
@@ -44,16 +45,14 @@ class Portfolios extends React.Component {
       .catch(err => console.error(err));
   }
 
-
   renderPortfolios(portfolios) {
-
-    const {isAuthenticated, isSiteOwner} = this.props.auth;
+    const { isAuthenticated, isSiteOwner } = this.props.auth;
 
     return portfolios.map((portfolio, index) => {
       return (
         <Col key={index} md="4">
           <PortfolioCard portfolio={portfolio}>
-            {isAuthenticated && isSiteOwner &&
+            { isAuthenticated && isSiteOwner &&
             <React.Fragment>
               <Button onClick={(e) => this.navigateToEdit(portfolio._id, e)} color="warning">Edit</Button>{' '}
               <Button onClick={(e) => this.displayDeleteWarning(portfolio._id, e)} color="danger">Delete</Button>
@@ -65,22 +64,21 @@ class Portfolios extends React.Component {
     })
   }
 
-
   render() {
-    const {portfolios} = this.props;
-    const {isAuthenticated, isSiteOwner} = this.props.auth;
+    const { portfolios } = this.props;
+    const { isAuthenticated, isSiteOwner } = this.props.auth;
 
     return (
-      <BaseLayout title="Ryan W. Stowe - Learn About My Experience" {...this.props.auth}>
+      <BaseLayout title="Ryan Stowe - Learn About My Experience" {...this.props.auth}>
         <BasePage className="portfolio-page" title="Portfolios">
-          {isAuthenticated && isSiteOwner &&
+          { isAuthenticated && isSiteOwner &&
           <Button onClick={() => Router.pushRoute('/portfolios/new')}
                   color="success"
                   className="create-port-btn">Create Portfolio
           </Button>
           }
           <Row>
-            {this.renderPortfolios(portfolios)}
+            { this.renderPortfolios(portfolios) }
           </Row>
         </BasePage>
       </BaseLayout>
