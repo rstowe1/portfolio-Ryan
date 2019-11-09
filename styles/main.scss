@@ -11,10 +11,12 @@
 @import "./header";
 @import "./slate-editor";
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-family: 'Montserrat', 'Helvetica';
+.montserrat-loaded {
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', 'Helvetica', serif;
+  }
 }
 
 .clickable {
@@ -32,7 +34,7 @@ html, body {
   position: absolute;
 }
 
-.error  {
+.error {
   font-weight: 700;
   color: red;
 }
