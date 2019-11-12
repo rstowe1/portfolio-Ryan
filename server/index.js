@@ -5,7 +5,7 @@ ath = require('path');
 const next = require('next');
 const mongoose = require('mongoose');
 const routes = require('../routes');
-
+const cors = require('cors')
 // Services
 const authService = require('./services/auth');
 
@@ -46,6 +46,7 @@ mongoose.connect(config.DB_URI, {useNewUrlParser: true})
 app.prepare()
   .then(() => {
     const server = express();
+    server.use(cors());
     server.use(compression());
     server.use(bodyParser.json());
 
